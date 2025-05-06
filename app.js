@@ -3,6 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const name = "Code Test";
 
+// get method.
 app.get("/", (req, res) => {
     const message = `Welcome to ShopEasy from ${name}!`;
     res.status(200).send(message); // Set status first, then send
