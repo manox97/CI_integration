@@ -9,6 +9,7 @@ app.get("/", (req, res) => {
     res.status(200).send(message); // Set status first, then send
 });
 
+// server start.
 const server = app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
